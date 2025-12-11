@@ -1,0 +1,3788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's For Dinner</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-light bg-white shadow-sm">
+      <div class="container-fluid px-lg-5 px-md-3">
+        <!-- Logo -->
+        <div class="d-flex align-items-center">
+          <div class="bg-primary rounded-circle text-white">
+            <i class="fa-solid fa-utensils fs-5"></i>
+          </div>
+          <div class="ms-3 pt-1">
+            <h1 class="navbar-brand mb-0 pb-0 fs-4 text-black">
+              What's For Dinner
+            </h1>
+            <span class="navbar-brand text-secondary p-0">
+              Your daily meal inspiration
+            </span>
+          </div>
+        </div>
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler d-md-none border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><i class="fa-solid fa-bars fs-3"></i
+          ></span>
+        </button>
+        <!-- Collapsed Content -->
+        <div
+          class="collapse navbar-collapse d-md-none"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto d-flex flex-column gap-3 mt-3">
+            <li
+              class="nav-item d-flex align-items-center gap-2 cursor-pointer p-1"
+            >
+              <i class="fa-solid fa-bookmark"></i>
+              <span class="text-secondary fs-6">Saved Recipes</span>
+            </li>
+
+            <li
+              class="nav-item d-flex align-items-center gap-2 cursor-pointer p-1"
+            >
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <span class="text-secondary fs-6">Recent</span>
+            </li>
+
+            <li
+              class="nav-item d-flex align-items-center gap-2 cursor-pointer p-1"
+            >
+              <i class="fa-solid fa-gear"></i>
+              <span class="text-secondary fs-6">Settings</span>
+            </li>
+
+            <li
+              class="nav-item d-flex align-items-center gap-2 cursor-pointer p-1"
+            >
+              <img
+                src="./images/avatar-4.jpg"
+                class="profile-image rounded-circle"
+                width="35"
+                height="35"
+              />
+              <span class="text-secondary fs-6">Profile</span>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="navbar-collaps d-none d-md-flex align-items-center ms-auto gap-4"
+        >
+          <div><i class="fa-solid fa-bookmark cursor-pointer fs-5"></i></div>
+          <div>
+            <i class="fa-solid fa-clock-rotate-left cursor-pointer fs-5"></i>
+          </div>
+          <div><i class="fa-solid fa-gear cursor-pointer fs-5"></i></div>
+          <div>
+            <img
+              src="./images/avatar-4.jpg"
+              alt="Profile"
+              class="profile-image rounded-circle cursor-pointer"
+              width="40px"
+              height="40px"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Main Content Section -->
+    <main class="main-content container-fluid p-5">
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="1"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/BBQ_Pulled_Pork.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.7</span>
+              <span class="text-secondary">(412 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">15 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">240 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">4 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold"
+                  >American</span
+                >
+                <h2 class="fw-bold mt-3">BBQ Pulled Pork</h2>
+                <p class="text-secondary">
+                  Slow-cooked tender pork in smoky barbecue sauce
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Preparation Time Hint -->
+            <div
+              class="main-hint d-flex align-items-center gap-3 rounded-4 px-4 py-3"
+            >
+              <div><i class="fa-solid fa-triangle-exclamation fs-5"></i></div>
+              <div>
+                <h6 class="mb-0 fw-semibold">Extended Preparation Time</h6>
+                <p class="text-danger mb-0">
+                  This recipe requires more than 45 minutes to prepare. Plan
+                  accordingly!
+                </p>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span> 1kg pork shoulder</li>
+                  <li><span>2</span> 1 cup BBQ sauce</li>
+                  <li><span>3</span> 1/2 cup apple cider vinegar</li>
+                  <li><span>4</span> 2 tablespoons brown sugar</li>
+                  <li><span>5</span> 1 tablespoon paprika</li>
+                  <li><span>6</span> 1 tablespoon garlic powder</li>
+                  <li><span>7</span> Burger buns</li>
+                  <li><span>8</span> Coleslaw for serving</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Mix paprika, garlic powder, brown sugar, salt and pepper.
+                      Rub all over pork shoulder.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Place pork in slow cooker with apple cider vinegar and 1/2
+                      cup water.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Cook on low for 8 hours or until pork is tender.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Remove pork and shred with two forks. Discard excess fat.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Return shredded pork to slow cooker, mix with BBQ sauce.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Serve on toasted buns with coleslaw on top.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">620 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">48g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">52g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">22g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">3g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">1180mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use pork shoulder for best results.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Let pork rest before shredding.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Homemade BBQ sauce tastes better.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Leftovers last 3 months in freezer.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="2"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Caprese-Sandwich.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.5</span>
+              <span class="text-secondary">(189 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">10 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">5 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">2 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold"
+                  >Italian</span
+                >
+                <h2 class="fw-bold mt-3">Caprese Sandwich</h2>
+                <p class="text-secondary">
+                  Fresh Italian sandwich with mozzarella, tomato, and basil
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span>ciabatta bread</li>
+                  <li><span>2</span>200g fresh mozzarella, sliced</li>
+                  <li><span>3</span>2 large tomatoes, sliced</li>
+                  <li><span>4</span>Fresh basil leaves</li>
+                  <li><span>5</span>3 tablespoons pesto</li>
+                  <li><span>6</span>2 tablespoons balsamic glaze</li>
+                  <li><span>7</span>Olive oil</li>
+                  <li><span>8</span>Salt and pepper</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Slice ciabatta bread in half horizontally.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Toast bread lightly until just crispy.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Spread pesto on both sides of bread.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Layer mozzarella slices, tomato slices, and fresh basil
+                      leaves.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Drizzle with olive oil and balsamic glaze. Season with
+                      salt and pepper.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Close sandwich, cut in half, and serve immediately.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">480 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">22g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">48g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">22g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">3g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">680mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use ripe, in-season tomatoes for best flavor
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Buffalo mozzarella is traditional but harder to slice
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Toast bread lightly - not too crispy
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Add prosciutto or salami for a heartier sandwich
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="3"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Mediterranean-Quinoa-Bowl.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.5</span>
+              <span class="text-secondary">(156 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">20 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">35 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">2 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold"
+                  >Mediterranean</span
+                >
+                <h2 class="fw-bold mt-3">Mediterranean Quinoa Bowl</h2>
+                <p class="text-secondary">
+                  Healthy bowl with quinoa, vegetables, and tahini dressing
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Preparation Time Hint -->
+            <div
+              class="main-hint d-flex align-items-center gap-3 rounded-4 px-4 py-3"
+            >
+              <div><i class="fa-solid fa-triangle-exclamation fs-5"></i></div>
+              <div>
+                <h6 class="mb-0 fw-semibold">Extended Preparation Time</h6>
+                <p class="text-danger mb-0">
+                  This recipe requires more than 45 minutes to prepare. Plan
+                  accordingly!
+                </p>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span>cup quinoa</li>
+                  <li><span>2</span>Cherry tomatoes, halved</li>
+                  <li><span>3</span>Cucumber, diced</li>
+                  <li><span>4</span>Red onion, sliced</li>
+                  <li><span>5</span>Kalamata olives</li>
+                  <li><span>6</span>Feta cheese, crumbled</li>
+                  <li><span>7</span>Fresh parsley</li>
+                  <li><span>8</span>Tahini dressing</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Rinse quinoa thoroughly. Cook according to package
+                      directions, usually 15 minutes.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      While quinoa cooks, prepare all vegetables and set aside.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      For tahini dressing: mix tahini, lemon juice, garlic, and
+                      water until smooth.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Fluff cooked quinoa with a fork and let cool slightly.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Arrange quinoa in bowls. Top with tomatoes, cucumber,
+                      onion, and olives.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Sprinkle with feta cheese and fresh parsley. Drizzle with
+                      tahini dressing.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">480 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">18g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">58g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">20g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">10g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">540mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Rinse quinoa well to remove bitter coating
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Let quinoa cool before adding fresh ingredients
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Make extra tahini dressing - it keeps well in the fridge
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Add grilled chicken or chickpeas for extra protein
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="4"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Chicken-Tikka-Masala.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.7</span>
+              <span class="text-secondary">(389 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">20 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">30 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">4 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold">Asian</span>
+                <h2 class="fw-bold mt-3">Chicken Tikka Masala</h2>
+                <p class="text-secondary">
+                  Rich and creamy Indian curry with tender chicken pieces
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Preparation Time Hint -->
+            <div
+              class="main-hint d-flex align-items-center gap-3 rounded-4 px-4 py-3"
+            >
+              <div><i class="fa-solid fa-triangle-exclamation fs-5"></i></div>
+              <div>
+                <h6 class="mb-0 fw-semibold">Extended Preparation Time</h6>
+                <p class="text-danger mb-0">
+                  This recipe requires more than 45 minutes to prepare. Plan
+                  accordingly!
+                </p>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span>600g chicken breast, cubed</li>
+                  <li><span>2</span>1 cup plain yogurt</li>
+                  <li><span>3</span>2 tablespoons tikka masala paste</li>
+                  <li><span>4</span>400ml coconut cream</li>
+                  <li><span>5</span>1 onion, diced</li>
+                  <li><span>6</span> 4 cloves garlic, minced</li>
+                  <li><span>7</span> 2 tablespoons ginger, grated</li>
+                  <li><span>8</span>400g canned tomatoes</li>
+                  <li><span>9</span>Fresh cilantro for garnish</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Marinate chicken in half the yogurt and 1 tablespoon tikka
+                      paste for at least 30 minutes.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Heat oil in a large pan, cook marinated chicken until
+                      browned. Remove and set aside.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      In the same pan, sauté onion until soft. Add garlic and
+                      ginger, cook for 1 minute.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Add remaining tikka paste and canned tomatoes. Simmer for
+                      10 minutes.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Stir in coconut cream and remaining yogurt. Add chicken
+                      back to the pan.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Simmer for 15 minutes until sauce thickens. Garnish with
+                      cilantro and serve with rice.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">450 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">38g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">24g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">22g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">4g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">760mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Marinate chicken overnight for deeper flavor
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use full-fat coconut cream for richest sauce
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Adjust spice level by varying the tikka paste amount
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Serve with naan bread and basmati rice
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="5"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Honey-Garlic-Salmon.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.9</span>
+              <span class="text-secondary">(187 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">10 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">15 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">2 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold"
+                  >Seafood</span
+                >
+                <h2 class="fw-bold mt-3">Honey Garlic Salmon</h2>
+                <p class="text-secondary">
+                  Pan-seared salmon with a sweet and savory glaze
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span> 2 salmon fillets (6oz each)</li>
+                  <li><span>2</span> 3 tablespoons honey</li>
+                  <li><span>3</span> 2 tablespoons soy sauce</li>
+                  <li><span>4</span> 4 cloves garlic, minced</li>
+                  <li><span>5</span> 1 tablespoon olive oil</li>
+                  <li><span>6</span> 1 teaspoon fresh ginger, grated</li>
+                  <li><span>7</span> Sesame seeds for garnish</li>
+                  <li><span>8</span> Green onions, sliced</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Pat salmon fillets dry with paper towels. Season with salt
+                      and pepper.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      In a small bowl, whisk together honey, soy sauce, minced
+                      garlic, and grated ginger.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Heat olive oil in a large skillet over medium-high heat.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Place salmon fillets skin-side up in the pan. Cook for 4-5
+                      minutes until golden.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Flip salmon and pour honey garlic sauce over the top. Cook
+                      for another 4-5 minutes.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Garnish with sesame seeds and sliced green onions. Serve
+                      with steamed vegetables or rice.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">380 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">35g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">28g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">14g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">0g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">720mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Don't overcook salmon - it should be slightly pink in the
+                    center
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use wild-caught salmon for best flavor and nutrition
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Let the sauce caramelize slightly for deeper flavor
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Pair with steamed broccoli or asparagus for a complete meal
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="6"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Pad-Thai.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.8</span>
+              <span class="text-secondary">(445 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">20 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">15 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">2 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold">Asian</span>
+                <h2 class="fw-bold mt-3">Pad Thai</h2>
+                <p class="text-secondary">
+                  Popular Thai stir-fried noodles with shrimp and peanuts
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span> 200g rice noodles</li>
+                  <li><span>2</span> 200g shrimp, peeled</li>
+                  <li><span>3</span> 2 eggs</li>
+                  <li><span>4</span> 3 tablespoons tamarind paste</li>
+                  <li><span>5</span>2 tablespoons fish sauce</li>
+                  <li><span>6</span> 1 tablespoon palm sugar</li>
+                  <li><span>7</span> Bean sprouts</li>
+                  <li><span>8</span> Crushed peanuts</li>
+                  <li><span>9</span> Lime wedges and cilantro</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Soak rice noodles in warm water for 30 minutes. Drain and
+                      set aside.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Mix tamarind paste, fish sauce, and palm sugar to make the
+                      sauce.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Heat wok over high heat. Scramble eggs and set aside.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Cook shrimp until pink. Add noodles and sauce, toss for
+                      2-3 minutes.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Add scrambled eggs and bean sprouts. Toss everything
+                      together.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Serve topped with crushed peanuts, lime wedges, and
+                      cilantro.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">540 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">32g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">62g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">16g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">4g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">1120mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Don't oversoak noodles or they'll be mushy
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Cook on high heat for authentic wok flavor
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Balance sweet, sour, and salty flavors
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Prepare all ingredients before starting to cook
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="7"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Lasagna-Bolognese.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.9</span>
+              <span class="text-secondary">(478 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">30 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">90 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">4 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold"
+                  >Italian</span
+                >
+                <h2 class="fw-bold mt-3">Lasagna Bolognese</h2>
+                <p class="text-secondary">
+                  Layered Italian pasta with rich meat sauce and béchamel
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Preparation Time Hint -->
+            <div
+              class="main-hint d-flex align-items-center gap-3 rounded-4 px-4 py-3"
+            >
+              <div><i class="fa-solid fa-triangle-exclamation fs-5"></i></div>
+              <div>
+                <h6 class="mb-0 fw-semibold">Extended Preparation Time</h6>
+                <p class="text-danger mb-0">
+                  This recipe requires more than 45 minutes to prepare. Plan
+                  accordingly!
+                </p>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span> 12 lasagna sheets</li>
+                  <li><span>2</span> 500g ground beef</li>
+                  <li><span>3</span> 400g canned tomatoes</li>
+                  <li><span>4</span> 1 onion, diced</li>
+                  <li><span>5</span> 2 carrots, diced</li>
+                  <li><span>6</span>500ml béchamel sauce</li>
+                  <li><span>7</span>200g mozzarella, grated</li>
+                  <li><span>8</span>100g parmesan cheese</li>
+                  <li><span>9</span>Fresh basil</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Cook ground beef with onion and carrots until browned. Add
+                      tomatoes and simmer for 30 minutes.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Cook lasagna sheets according to package directions. Drain
+                      and set aside.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">Preheat oven to 180°C (350°F).</p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      In a baking dish, layer: meat sauce, lasagna sheets,
+                      béchamel sauce. Repeat 3-4 times.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Top final layer with béchamel, mozzarella, and parmesan
+                      cheese.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Bake for 45 minutes until golden and bubbly. Let rest 10
+                      minutes before serving.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">680 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">42g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">58g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">28g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">6g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">920mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Make bolognese sauce a day ahead for better flavor
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Don't skip the resting time after baking
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use fresh pasta sheets for best texture
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Freeze leftovers in individual portions
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="8"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Thai-Green-Curry.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.7</span>
+              <span class="text-secondary">(312 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">15 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">25 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">4 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold">Asian</span>
+                <h2 class="fw-bold mt-3">Thai Green Curry</h2>
+                <p class="text-secondary">
+                  Vibrant and aromatic curry with vegetables and coconut milk
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span> 2 tablespoons green curry paste</li>
+                  <li><span>2</span> 400ml coconut milk</li>
+                  <li><span>3</span> 300g chicken breast, sliced</li>
+                  <li><span>4</span> 1 red bell pepper, sliced</li>
+                  <li><span>5</span> 100g green beans</li>
+                  <li><span>6</span> 1 eggplant, cubed</li>
+                  <li><span>7</span> 2 tablespoons fish sauce</li>
+                  <li><span>8</span> 1 tablespoon palm sugar</li>
+                  <li><span>9</span> Fresh Thai basil leaves</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Heat a large pot or wok over medium heat. Add curry paste
+                      and cook for 1 minute until fragrant.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Add half the coconut milk and stir to combine with the
+                      curry paste.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Add sliced chicken and cook until no longer pink, about 5
+                      minutes.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Add remaining coconut milk, vegetables, fish sauce, and
+                      palm sugar.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Simmer for 15-20 minutes until vegetables are tender and
+                      sauce has thickened.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Stir in fresh Thai basil leaves. Serve hot with jasmine
+                      rice.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">420 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">26g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">22g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">26g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">5g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">890mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Adjust spice level by using more or less curry paste
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Add vegetables in stages based on cooking time needed
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Fresh Thai basil is essential for authentic flavor
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use full-fat coconut milk for richest, creamiest sauce
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="9"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/French-Onion-Soup.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.7</span>
+              <span class="text-secondary">(267 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">15 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">60 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">4 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex flex-sm-column align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold"
+                  >Mediterranean</span
+                >
+                <h2 class="fw-bold mt-3">French Onion Soup</h2>
+                <p class="text-secondary">
+                  Rich beef broth with caramelized onions and melted cheese
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Preparation Time Hint -->
+            <div
+              class="main-hint d-flex align-items-center gap-3 rounded-4 px-4 py-3"
+            >
+              <div><i class="fa-solid fa-triangle-exclamation fs-5"></i></div>
+              <div>
+                <h6 class="mb-0 fw-semibold">Extended Preparation Time</h6>
+                <p class="text-danger mb-0">
+                  This recipe requires more than 45 minutes to prepare. Plan
+                  accordingly!
+                </p>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span>4 large onions, thinly sliced</li>
+                  <li><span>2</span> 4 tablespoons butter</li>
+                  <li><span>3</span>1 liter beef broth</li>
+                  <li><span>4</span> 1/2 cup white wine</li>
+                  <li><span>5</span>2 bay leaves</li>
+                  <li><span>6</span> Fresh thyme</li>
+                  <li><span>7</span>Baguette slices</li>
+                  <li><span>8</span>200g Gruyère cheese, grated</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Melt butter in a large pot. Add onions and cook slowly for
+                      40 minutes, stirring occasionally until caramelized.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Add white wine and deglaze the pot, scraping up brown
+                      bits.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Pour in beef broth, add bay leaves and thyme. Simmer for
+                      20 minutes.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Meanwhile, toast baguette slices until golden.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Ladle soup into oven-safe bowls. Top with toasted bread
+                      and cheese.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Broil for 3-5 minutes until cheese is melted and bubbly.
+                      Serve hot.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">380 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">18g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">36g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">18g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">4g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">980mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Patience is key - don't rush the onion caramelization
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use good quality beef broth for best flavor
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Gruyère can be substituted with Swiss cheese
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Watch carefully when broiling to avoid burning
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="10"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Classic-Beef-Burger.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.6</span>
+              <span class="text-secondary">(421 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">15 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">20 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">4 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold"
+                  >American</span
+                >
+                <h2 class="fw-bold mt-3">Classic Beef Burger</h2>
+                <p class="text-secondary">
+                  Juicy homemade burger with all the fixings
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span>500g ground beef (80/20)</li>
+                  <li><span>2</span>4 burger buns</li>
+                  <li><span>3</span>4 slices cheddar cheese</li>
+                  <li><span>4</span>Lettuce leaves</li>
+                  <li><span>5</span>Tomato slices</li>
+                  <li><span>6</span>Red onion, sliced</li>
+                  <li><span>7</span>Pickles</li>
+                  <li><span>8</span>Burger sauce or condiments</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Divide ground beef into 4 equal portions. Form into
+                      patties, making a small indent in the center.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Season patties generously with salt and pepper on both
+                      sides.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Heat a grill or skillet over high heat. Cook patties for
+                      4-5 minutes per side for medium.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Add cheese slices in the last minute of cooking and cover
+                      to melt.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Toast burger buns lightly on the grill or in a pan.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Assemble burgers with lettuce, tomato, onion, pickles, and
+                      your favorite sauce.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">650 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">38g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">42g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">35g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">2g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">920mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Don't press down on burgers while cooking - keeps them juicy
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Make indent in center to prevent burger from puffing up
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Let patties rest for 2-3 minutes before serving
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Toast buns for better texture and flavor
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="11"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Vegetable-Curry.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.6</span>
+              <span class="text-secondary">(289 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">20 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">30 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">4 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold">Asian</span>
+                <h2 class="fw-bold mt-3">Vegetable Curry</h2>
+                <p class="text-secondary">
+                  Hearty vegetarian curry with coconut milk
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Preparation Time Hint -->
+            <div
+              class="main-hint d-flex align-items-center gap-3 rounded-4 px-4 py-3"
+            >
+              <div><i class="fa-solid fa-triangle-exclamation fs-5"></i></div>
+              <div>
+                <h6 class="mb-0 fw-semibold">Extended Preparation Time</h6>
+                <p class="text-danger mb-0">
+                  This recipe requires more than 45 minutes to prepare. Plan
+                  accordingly!
+                </p>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span>2 potatoes, cubed</li>
+                  <li><span>2</span>1 cauliflower, florets</li>
+                  <li><span>3</span>2 carrots, sliced</li>
+                  <li><span>4</span>1 can chickpeas</li>
+                  <li><span>5</span>400ml coconut milk</li>
+                  <li><span>6</span>3 tablespoons curry powder</li>
+                  <li><span>7</span>1 onion, diced</li>
+                  <li><span>8</span>3 cloves garlic, minced</li>
+                  <li><span>9</span>Fresh spinach</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Heat oil in a large pot. Sauté onion until soft, add
+                      garlic and curry powder, cook for 1 minute.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Add potatoes and carrots, cook for 5 minutes.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Pour in coconut milk and 1 cup water. Bring to simmer.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Add cauliflower and chickpeas. Cook for 20 minutes until
+                      vegetables are tender.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Stir in fresh spinach and cook until wilted.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Serve hot over basmati rice or with naan bread.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">380 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">14g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">48g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">16g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">12g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">480mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Add vegetables in order of cooking time needed
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Adjust curry powder amount to taste
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use full-fat coconut milk for creamier curry
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Add protein like tofu or paneer if desired
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="12"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Margherita-Pizza.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.9</span>
+              <span class="text-secondary">(512 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">90 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">12 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">2 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold"
+                  >Italian</span
+                >
+                <h2 class="fw-bold mt-3">Margherita Pizza</h2>
+                <p class="text-secondary">
+                  Classic Italian pizza with fresh mozzarella and basil
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Preparation Time Hint -->
+            <div
+              class="main-hint d-flex align-items-center gap-3 rounded-4 px-4 py-3"
+            >
+              <div><i class="fa-solid fa-triangle-exclamation fs-5"></i></div>
+              <div>
+                <h6 class="mb-0 fw-semibold">Extended Preparation Time</h6>
+                <p class="text-danger mb-0">
+                  This recipe requires more than 45 minutes to prepare. Plan
+                  accordingly!
+                </p>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span>300g pizza dough</li>
+                  <li><span>2</span>200g crushed tomatoes</li>
+                  <li><span>3</span>250g fresh mozzarella</li>
+                  <li><span>4</span>Fresh basil leaves</li>
+                  <li><span>5</span>2 tablespoons olive oil</li>
+                  <li><span>6</span>2 cloves garlic, minced</li>
+                  <li><span>7</span>Salt and pepper to taste</li>
+                  <li><span>8</span>Parmesan cheese for topping</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Let pizza dough come to room temperature and rest for 1
+                      hour.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Preheat oven to maximum temperature (usually 250°C/480°F).
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Mix crushed tomatoes with olive oil, garlic, salt, and
+                      pepper for the sauce.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Roll out dough on a floured surface to desired thickness.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Spread tomato sauce, add torn mozzarella pieces, and
+                      drizzle with olive oil.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Bake for 10-12 minutes until crust is golden. Top with
+                      fresh basil and parmesan.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">580 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">24g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">68g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">22g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">4g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">920mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use a pizza stone for crispier crust
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Don't overload with toppings - less is more
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Add basil after baking to keep it fresh
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Let dough rest properly for best texture
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="13"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Teriyaki-Chicken-Bowl.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.7</span>
+              <span class="text-secondary">(367 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">15 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">20 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">2 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold">Asian</span>
+                <h2 class="fw-bold mt-3">Teriyaki Chicken Bowl</h2>
+                <p class="text-secondary">
+                  Sweet and savory chicken over rice with vegetables
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span>400g chicken thighs, sliced</li>
+                  <li><span>2</span>1/2 cup teriyaki sauce</li>
+                  <li><span>3</span>2 cups cooked rice</li>
+                  <li><span>4</span>1 broccoli head, florets</li>
+                  <li><span>5</span>1 carrot, julienned</li>
+                  <li><span>6</span>Sesame seeds</li>
+                  <li><span>7</span>Green onions, sliced</li>
+                  <li><span>8</span>1 tablespoon sesame oil</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Heat sesame oil in a pan. Cook chicken until browned on
+                      all sides.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Add teriyaki sauce to chicken, simmer for 5 minutes until
+                      sauce thickens.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Meanwhile, steam broccoli and carrots until tender-crisp.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">Divide rice between bowls.</p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Top with teriyaki chicken and steamed vegetables.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Garnish with sesame seeds and green onions. Serve hot.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">540 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">42g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">58g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">14g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">4g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">1240mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use chicken thighs for juicier meat
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Make homemade teriyaki sauce for better flavor control
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Add edamame for extra protein
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Meal prep by cooking rice and chicken ahead
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="14"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Creamy-Spaghetti-Carbonara.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.8</span>
+              <span class="text-secondary">(234 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">15 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">20 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">4 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold"
+                  >Italian</span
+                >
+                <h2 class="fw-bold mt-3">Creamy Spaghetti Carbonara</h2>
+                <p class="text-secondary">
+                  A classic Italian pasta dish with eggs, cheese, and pancetta
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span>400g spaghetti pasta</li>
+                  <li><span>2</span>200g pancetta or guanciale, diced</li>
+                  <li><span>3</span>4 large eggs</li>
+                  <li><span>4</span>100g Pecorino Romano cheese, grated</li>
+                  <li><span>5</span>50g Parmesan cheese, grated</li>
+                  <li><span>6</span>Freshly ground black pepper</li>
+                  <li><span>7</span>Salt for pasta water</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Bring a large pot of salted water to boil. Cook spaghetti
+                      according to package directions until al dente.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      While pasta cooks, heat a large skillet over medium heat.
+                      Add diced pancetta and cook until crispy, about 5-7
+                      minutes.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      In a bowl, whisk together eggs, grated Pecorino Romano,
+                      and Parmesan cheese. Add plenty of freshly ground black
+                      pepper.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Reserve 1 cup of pasta cooking water before draining.
+                      Drain pasta and immediately add to the skillet with
+                      pancetta.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Remove skillet from heat. Quickly pour in egg mixture
+                      while tossing pasta vigorously. Add reserved pasta water
+                      as needed to create a creamy sauce.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Serve immediately with extra cheese and black pepper on
+                      top. Enjoy your authentic carbonara!
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">520 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">28g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">62g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">18g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">3g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">680mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Use room temperature eggs for a smoother sauce consistency
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Work quickly when mixing eggs with hot pasta to avoid
+                    scrambling
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Reserve extra pasta water - it's the secret to perfect
+                    creaminess
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Freshly grated cheese makes all the difference in flavor
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Never add cream - authentic carbonara is made with eggs only
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-box recipe-box shadow-sm bg-white overflow-hidden"
+        data-recipe="15"
+      >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 p-0 position-relative">
+            <img
+              src="./images/Shrimp-Scampi.png"
+              alt="Dinner-Table"
+              class="img-fluid w-100 h-100 object-fit-cover"
+            />
+            <!-- Review card -->
+            <div
+              class="review-card position-absolute bg-white rounded-5 d-flex align-items-center gap-2 py-2 px-3"
+              style="top: 15px; left: 15px"
+            >
+              <i class="fa-solid fa-star"></i>
+              <span class="fw-semibold">4.8</span>
+              <span class="text-secondary">(356 reviews)</span>
+            </div>
+            <!-- Bottom box -->
+            <div
+              class="info-box position-absolute bottom-0 start-50 my-4 d-flex align-items-center justify-content-between bg-white rounded-4 py-4 px-5 translate-middle-x"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-0 text-secondary">Prep Time</p>
+                <span class="fw-semibold">10 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-0 text-secondary">Cook Time</p>
+                <span class="fw-semibold">15 min</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-0 text-secondary">Servings</p>
+                <span class="fw-semibold">2 people</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-section col-12 col-lg-7 p-5">
+            <div class="recipe-header d-flex align-items-center justify-content-between">
+              <div>
+                <span class="span-1 rounded-4 text-success fw-bold me-2"
+                  >Easy</span
+                >
+                <span class="span-2 rounded-4 text-primary fw-bold"
+                  >Seafood</span
+                >
+                <h2 class="fw-bold mt-3">Shrimp Scampi</h2>
+                <p class="text-secondary">
+                  Garlicky shrimp in white wine butter sauce A classic Italian
+                  pasta dish with eggs, cheese, and pancetta
+                </p>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="cursor-pointer">
+                  <i class="fa-solid fa-share-nodes"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Tabs Navigation -->
+            <div
+              class="tabs d-flex align-items-center justify-content-around border-bottom pt-5 pb-4"
+            >
+              <button
+                class="tab-btn active border-0 bg-transparent fw-medium"
+                data-target="ingredients"
+              >
+                <i class="fa-solid fa-list-check pe-2"></i>Ingredients
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="instructions"
+              >
+                <i class="fa-solid fa-book-open pe-2"></i>Instructions
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="nutrition"
+              >
+                <i class="fa-solid fa-chart-pie pe-2"></i>Nutrition
+              </button>
+              <button
+                class="tab-btn border-0 bg-transparent fw-medium"
+                data-target="chefs-tips"
+              >
+                <i class="fa-solid fa-lightbulb pe-2"></i>Chef's Tips
+              </button>
+            </div>
+            <!-- Content Sections -->
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="tab-content show">
+              <div class="ingredients-box">
+                <ul>
+                  <li><span>1</span>400g large shrimp, peeled</li>
+                  <li><span>2</span>300g linguine pasta</li>
+                  <li><span>3</span>6 cloves garlic, minced</li>
+                  <li><span>4</span>1/2 cup white wine</li>
+                  <li><span>5</span>4 tablespoons butter</li>
+                  <li><span>6</span>2 tablespoons olive oil</li>
+                  <li><span>7</span>Fresh parsley, chopped</li>
+                  <li><span>8</span>Lemon juice and zest</li>
+                  <li><span>9</span>Red pepper flakes</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Instructions Section -->
+            <div id="instructions" class="tab-content">
+              <div class="instructions-box">
+                <ul>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5 px-2">1</span>
+                    <p class="mb-0 pt-2">
+                      Cook linguine according to package directions. Reserve 1
+                      cup pasta water.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">2</span>
+                    <p class="mb-0 pt-2">
+                      Heat olive oil and 2 tablespoons butter in a large pan.
+                      Add garlic and red pepper flakes, cook for 1 minute.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">3</span>
+                    <p class="mb-0 pt-2">
+                      Add shrimp, cook until pink on both sides, about 3-4
+                      minutes. Remove and set aside.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">4</span>
+                    <p class="mb-0 pt-2">
+                      Add white wine to pan, simmer for 2 minutes. Add remaining
+                      butter and lemon juice.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">5</span>
+                    <p class="mb-0 pt-2">
+                      Return shrimp to pan, add cooked pasta and toss. Add pasta
+                      water if needed.
+                    </p>
+                  </li>
+                  <li class="text-secondary text-start d-flex">
+                    <span class="fw-bold fs-5">6</span>
+                    <p class="mb-0 pt-2">
+                      Garnish with parsley, lemon zest, and serve immediately.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Nutrition Section -->
+            <div id="nutrition" class="tab-content">
+              <div class="nutrition-grid">
+                <div class="nut-item">
+                  <span class=""
+                    ><i class="fa-solid fa-fire me-2 rounded-3"></i>
+                    Calories</span
+                  >
+                  <p class="fw-bold fs-5">520 kcal</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i
+                      class="fa-solid fa-dumbbell me-2 rounded-3 text-primary"
+                    ></i>
+                    Protein</span
+                  >
+                  <p class="fw-bold fs-5">36g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-wheat-awn me-2 rounded-3"></i
+                    >Carbohydrates</span
+                  >
+                  <p class="fw-bold fs-5">54g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-droplet me-2 rounded-3"></i>
+                    Fat</span
+                  >
+                  <p class="fw-bold fs-5">18g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-seedling me-2 rounded-3"></i>
+                    Fiber</span
+                  >
+                  <p class="fw-bold fs-5">3g</p>
+                </div>
+                <div class="nut-item">
+                  <span
+                    ><i class="fa-solid fa-cube me-2 rounded-3"></i>
+                    Sodium</span
+                  >
+                  <p class="fw-bold fs-5">620mg</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chef's Tips Section -->
+            <div id="chefs-tips" class="tab-content">
+              <div class="tips-box">
+                <ul class="ps-0">
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                    Don't overcook shrimp - they cook very quickly
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                  Use good quality white wine for best flavor
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                 Toss pasta in sauce for maximum flavor absorption
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check me-2"></i>
+                   Add extra lemon for bright, fresh taste
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay mt-4"></div>
+            <button
+              id="another-recipe-btn"
+              class="another-recipe-btn cursor-pointer border-0 text-white mt-4"
+            >
+              <i class="fa-solid fa-rotate pe-1"></i> Try Another Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS-->
+    <script src="./script.js"></script>
+  </body>
+</html>
